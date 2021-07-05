@@ -2,7 +2,7 @@
 
 /*/{Protheus.doc} BLOQSB1
 Rotina para bloquear produtos na tabela SB1
-Informar produtos separados por VÌrgula (,)
+Informar produtos separados por V√≠rgula (,)
 Para todas empresas informar Quais empresas? = TODAS
 
 @type		function
@@ -15,7 +15,7 @@ User Function BLOQSB1()
 MsgAlert("Atencao, programa em fase de testes.","Atencao!")
 
 Local aPergs      := {} //Perguntas da Tela do Parambox
-Local aRet        := {} //Array com o Retorno padr„o do Parambox
+Local aRet        := {} //Array com o Retorno padr√£o do Parambox
 Private aArea     := GetArea()
 Private aAreaSM0  := SM0->( GetArea() )
 Private cQualProd := Space(250)
@@ -28,11 +28,11 @@ Private cQualProd := Space(250)
 	If ParamBox(aPergs ,"Bloqueio de Produtos SB1",aRet,/*bOk*/,/*aButtons*/,/*lCentered*/,/*nPosx*/,/*nPosy*/,/*oMainDlg*/,/*cLoad*/,.F.,.F.)
         cQualProd:= Alltrim(UPPER(aRet[1]))
 
-	//Chama funÁ„o que INCLUI o usu·rio nos par‚metros
+	//Chama fun√ß√£o que INCLUI o usu√°rio nos par√¢metros
 	Processa({|| BLOQSB1Ini()}, "Aguarde... acessando e bloqueando produtos")
 	Else
 		//MsgAlert("Processo cancelado")
-		Help(NIL,NIL, "BLOQSB1",NIL, "Processo cancelado pelo Usu·rio", 1, 0, NIL, NIL, NIL, NIL, NIL,"")
+		Help(NIL,NIL, "BLOQSB1",NIL, "Processo cancelado pelo Usu√°rio", 1, 0, NIL, NIL, NIL, NIL, NIL,"")
 	EndIf
 
 RestArea(aArea)
@@ -40,14 +40,14 @@ RestArea( aAreaSM0 )
 Return
 
 /*---------------------------------------------------*
- | FunÁ„o:                                           |
+ | Fun√ß√£o:                                           |
  | Desc:                                             |
  *---------------------------------------------------*/
 
 Static Function BLOQSB1Ini
 
 
-
+//teste
 
 
 
