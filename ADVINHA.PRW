@@ -7,8 +7,8 @@ User Function ADVINHA()
 
     nChute := FWInpuBox("Digite um texto","")
     Alert(cValToChar(nChute))
-    
 
+    
 
 
 
