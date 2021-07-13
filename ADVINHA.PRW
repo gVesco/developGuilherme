@@ -5,11 +5,17 @@ User Function ADVINHA()
     Local nNum := 50
     Local nChute := 0
 
-    nChute := FWInpuBox("Digite um texto","")
-    Alert(cValToChar(nChute))
-
+    While nChute != nNum
+    nChute := Val(FWInputBox("Escolha um numero [1 - 100]",""))
+        If nChute == nNum
+            MsgInfo("Voce acertou - <b>" + cValToChar(nChute) + "</b>","Fim de Jogo")
+        ElseIf nChute > nNum
+            MsgAlert("Valor muito alto, tente novamente")
+        Else
+            MsgAlert("Valor muito baixo, tente novamente")
+        EndIf
+    End
     
-
-
+    
 
 Return
