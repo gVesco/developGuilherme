@@ -6,7 +6,7 @@ User Function ADVINHA()
     Local nChute := 0
 
     While nChute != nNum
-    nChute := Val(FWInputBox("Escolha um numero [1 - 100]",""))
+    nChute := Val(FWInputBox("Escolha um numero [1 - 100]","")) //Funcao converte para valor numero inserido
         If nChute == nNum
             MsgInfo("Voce acertou - <b>" + cValToChar(nChute) + "</b>","Fim de Jogo")
         ElseIf nChute > nNum
